@@ -48,6 +48,7 @@ namespace Controle
             //substiuir a variavel do objeto para o sql
             cmd.Parameters.AddWithValue("@login", us.login);
             cmd.Parameters.AddWithValue("@senha", us.senha);
+            cmd.Parameters.AddWithValue("@perfil", us.perfil);
             cmd.Parameters.AddWithValue("@usuario", us.usuario);
             //guarda o valor retornado da execução do sql
             registro=cmd.ExecuteNonQuery();
@@ -77,11 +78,24 @@ namespace Controle
             MySqlCommand cmd= new MySqlCommand(sql,conexao);
             cmd.Parameters.AddWithValue("@login",us.login);
             cmd.Parameters.AddWithValue("@senha", us.senha);
+            cmd.Parameters.AddWithValue("@perfil", us.perfil);
             cmd.Parameters.AddWithValue("@usuario", us.usuario);
             cmd.Parameters.AddWithValue("@id", us.id);
             resultado = cmd.ExecuteNonQuery();
             conexao.Close();
             return resultado;
+        }
+        public int apagar(string sql, int codigo)
+        {
+            int resultado = 0;
+            conexao = getConexao();
+            conexao.Open();
+            MySqlCommand cmd = new MySqlCommand(sql, conexao);
+            cmd.Parameters.AddWithValue("@id", codigo);
+            resultado = cmd.ExecuteNonQuery();
+            conexao.Close();
+            return resultado;
+
         }
 
     }

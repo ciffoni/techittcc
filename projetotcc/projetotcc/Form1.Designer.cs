@@ -41,6 +41,8 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnConexao = new System.Windows.Forms.Button();
             this.dtUsuario = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboPerfil = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +74,7 @@
             this.btnExcluir.TabIndex = 2;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // label1
             // 
@@ -157,11 +160,31 @@
             this.dtUsuario.TabIndex = 12;
             this.dtUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtUsuario_CellContentClick);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 165);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Perfil:";
+            // 
+            // cboPerfil
+            // 
+            this.cboPerfil.FormattingEnabled = true;
+            this.cboPerfil.Location = new System.Drawing.Point(111, 156);
+            this.cboPerfil.Name = "cboPerfil";
+            this.cboPerfil.Size = new System.Drawing.Size(121, 21);
+            this.cboPerfil.TabIndex = 14;
+            this.cboPerfil.SelectedIndexChanged += new System.EventHandler(this.cboPerfil_SelectedIndexChanged);
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboPerfil);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.dtUsuario);
             this.Controls.Add(this.btnConexao);
             this.Controls.Add(this.txtSenha);
@@ -199,6 +222,8 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnConexao;
         private System.Windows.Forms.DataGridView dtUsuario;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cboPerfil;
     }
 }
 

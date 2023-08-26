@@ -42,3 +42,4 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projet
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\modelo.dll
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\modelo.pdb
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmUsuario.resources
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmPrincipal.resources

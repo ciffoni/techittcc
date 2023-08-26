@@ -20,6 +20,7 @@ namespace projetotcc
         UsuarioModelo usuario = new UsuarioModelo();
         //variavel do registro do datagrid view
         int registroId;
+        int perfil;
         //contruindo o formulario
         public FrmUsuario()
         {
@@ -49,6 +50,7 @@ namespace projetotcc
             usuario.login = txtLogin.Text;
             usuario.usuario = txtNome.Text;
             usuario.senha=txtSenha.Text;
+            usuario.perfil = perfil;
             //usuario.id = Convert.ToInt32(txtCodigo.Text);
            if( con.cadastrar("insert into usuario(nomeusuario,login,senha)values(@usuario,@login,@senha)", usuario) == 1)
             {
@@ -63,7 +65,9 @@ namespace projetotcc
 
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
-
+            cboPerfil.DataSource = con.obterdados("select * from perfil");
+            cboPerfil.DisplayMember = "perfil";
+            cboPerfil.ValueMember = "id"; 
             dtUsuario.DataSource = con.obterdados("select * from usuario");
         }
 
@@ -88,6 +92,7 @@ namespace projetotcc
                 usuario.usuario = txtNome.Text;
                 usuario.login = txtLogin.Text;
                 usuario.senha = txtSenha.Text;
+                usuario.perfil = perfil;
                 if (con.atualizar("update usuario set login=@login,nomeusuario=@usuario,senha=@senha where idusuario=@id", usuario) == 1)
                 {
                     MessageBox.Show("Atualizado com sucesso!");
@@ -101,6 +106,31 @@ namespace projetotcc
             {
                 MessageBox.Show("Favor escolher um usuário!");
             }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if(registroId != 0)
+            {
+                if (con.apagar("delete from usuario where idusuario=@id", registroId) == 1)
+                {
+                    MessageBox.Show("Usuario apagado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao ecluir o usuario!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Favor escolher um registro!");
+            }
+        }
+
+        private void cboPerfil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            perfil = Convert.ToInt32(((DataRowView)cboPerfil.SelectedItem)["id"]);
+
         }
     }
 }

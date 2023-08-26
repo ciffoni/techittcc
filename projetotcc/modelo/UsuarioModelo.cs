@@ -14,6 +14,7 @@ namespace modelo
         public string usuario;
         public string login;
         public string senha;
+        public int perfil;
         //crio o construtor do objeto
         public UsuarioModelo()
         {
@@ -22,6 +23,7 @@ namespace modelo
             usuario = null;
             login = null;
             senha = null;
+            perfil = 1;
         }
     }
 }
