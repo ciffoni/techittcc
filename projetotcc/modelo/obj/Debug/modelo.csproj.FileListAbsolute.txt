@@ -1,0 +1,6 @@
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\modelo\bin\Debug\modelo.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\modelo\bin\Debug\modelo.pdb
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\modelo\obj\Debug\modelo.csproj.AssemblyReference.cache
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\modelo\obj\Debug\modelo.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\modelo\obj\Debug\modelo.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\modelo\obj\Debug\modelo.pdb
