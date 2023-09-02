@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 26-Ago-2023 às 21:36
+-- Tempo de geração: 02-Set-2023 às 21:20
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -48,6 +48,27 @@ INSERT INTO `perfil` (`id`, `perfil`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `produto`
+--
+
+DROP TABLE IF EXISTS `produto`;
+CREATE TABLE `produto` (
+  `idproduto` int(10) NOT NULL,
+  `nome` varchar(60) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `foto` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`idproduto`, `nome`, `valor`, `foto`) VALUES
+(1, 'coca', '7.50', 'C:\\Users\\aluno\\Documents\\GitHub\\techittcc\\foto\\coca.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario`
 --
 
@@ -65,7 +86,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idusuario`, `nomeusuario`, `login`, `senha`, `perfil`) VALUES
-(1, 'jorge ciffoni', 'ciffoni', 'aula123', 0);
+(1, 'jorge ciffoni', 'ciffoni', '8331e766a06eedd77bdc3afb4bdc4ad7', 1),
+(3, 'amanda', 'aciffoni', 'aula123', 1);
 
 --
 -- Índices para tabelas despejadas
@@ -76,6 +98,12 @@ INSERT INTO `usuario` (`idusuario`, `nomeusuario`, `login`, `senha`, `perfil`) V
 --
 ALTER TABLE `perfil`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `produto`
+--
+ALTER TABLE `produto`
+  ADD PRIMARY KEY (`idproduto`);
 
 --
 -- Índices para tabela `usuario`
@@ -94,10 +122,16 @@ ALTER TABLE `perfil`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de tabela `produto`
+--
+ALTER TABLE `produto`
+  MODIFY `idproduto` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idusuario` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

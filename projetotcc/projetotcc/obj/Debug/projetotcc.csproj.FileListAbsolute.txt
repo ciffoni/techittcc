@@ -43,3 +43,5 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\modelo
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\modelo.pdb
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmUsuario.resources
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmPrincipal.resources
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmLogin.resources
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmProduto.resources

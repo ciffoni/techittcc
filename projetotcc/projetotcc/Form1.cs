@@ -49,10 +49,10 @@ namespace projetotcc
             //atribuindo o valor do formulario para o objeto
             usuario.login = txtLogin.Text;
             usuario.usuario = txtNome.Text;
-            usuario.senha=txtSenha.Text;
+            usuario.senha=con.getMD5Hash(txtSenha.Text);
             usuario.perfil = perfil;
             //usuario.id = Convert.ToInt32(txtCodigo.Text);
-           if( con.cadastrar("insert into usuario(nomeusuario,login,senha)values(@usuario,@login,@senha)", usuario) == 1)
+           if( con.cadastrar("insert into usuario(nomeusuario,login,senha,perfil)values(@usuario,@login,@senha,@perfil)", usuario) == 1)
             {
                 MessageBox.Show("Cadastro com sucesso!");
             }
@@ -91,9 +91,9 @@ namespace projetotcc
                 usuario.id = Convert.ToInt32(txtCodigo.Text);
                 usuario.usuario = txtNome.Text;
                 usuario.login = txtLogin.Text;
-                usuario.senha = txtSenha.Text;
+                usuario.senha = con.getMD5Hash(txtSenha.Text);
                 usuario.perfil = perfil;
-                if (con.atualizar("update usuario set login=@login,nomeusuario=@usuario,senha=@senha where idusuario=@id", usuario) == 1)
+                if (con.atualizar("update usuario set login=@login,nomeusuario=@usuario,senha=@senha,perfil=@perfil where idusuario=@id", usuario) == 1)
                 {
                     MessageBox.Show("Atualizado com sucesso!");
                 }
