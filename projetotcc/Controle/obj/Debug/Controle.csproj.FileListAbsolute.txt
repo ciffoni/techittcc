@@ -39,3 +39,9 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\obj\Debug\Controle
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\obj\Debug\Controle.pdb
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\modelo.dll
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\modelo.pdb
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\PdfSharp.Charting.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\PdfSharp.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\PdfSharp.xml
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\PdfSharp.Charting.xml
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\de\PdfSharp.Charting.resources.dll

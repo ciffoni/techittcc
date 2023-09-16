@@ -11,13 +11,16 @@ namespace modelo
         public int codigo;
         private string nomeProduto;
         private decimal valor;
-        private string foto;
+        private string foto;//foto caminho
+        private DateTime data;//campo data
+        private bool valida;//campo checkbox
         public ProdutoModelo()
         {
             codigo = 0;
             nomeProduto = null;
             valor = 0;
             foto = null;
+            valida = false;
         }
         //metodo de acesso a variavel
         public string Nome
@@ -36,6 +39,16 @@ namespace modelo
         {
             get { return foto; }
             set { foto = value; }
+        }
+        public DateTime Data
+        {
+            get { return data; }
+            set{ data = value; }
+        }
+        public bool Valida
+        {
+            get { return valida; }
+            set { valida = value; }
         }
     }
 }

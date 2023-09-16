@@ -32,7 +32,6 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\K4os.H
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.csproj.AssemblyReference.cache
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.csproj.SuggestedBindingRedirects.cache
-C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.exe.config
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.Properties.Resources.resources
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.csproj.GenerateResource.cache
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.csproj.CoreCompileInputs.cache
@@ -45,3 +44,11 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projet
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmPrincipal.resources
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmLogin.resources
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\obj\Debug\projetotcc.FrmProduto.resources
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\PdfSharp.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\PdfSharp.xml
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\de\PdfSharp.resources.dll
