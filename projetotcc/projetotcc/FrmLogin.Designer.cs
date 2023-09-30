@@ -34,6 +34,7 @@
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnLogar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnRecuperar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,11 +89,22 @@
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // btnRecuperar
+            // 
+            this.btnRecuperar.Location = new System.Drawing.Point(87, 162);
+            this.btnRecuperar.Name = "btnRecuperar";
+            this.btnRecuperar.Size = new System.Drawing.Size(75, 23);
+            this.btnRecuperar.TabIndex = 6;
+            this.btnRecuperar.Text = "Recuperar Senha";
+            this.btnRecuperar.UseVisualStyleBackColor = true;
+            this.btnRecuperar.Click += new System.EventHandler(this.btnRecuperar_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(254, 200);
+            this.Controls.Add(this.btnRecuperar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLogar);
             this.Controls.Add(this.txtSenha);
@@ -114,5 +126,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnLogar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnRecuperar;
     }
 }

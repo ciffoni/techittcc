@@ -9,6 +9,8 @@ using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using modelo;
 using System.Diagnostics;
+using System.Net.Mail;
+using System.Management;
 
 namespace Controle
 {
@@ -62,6 +64,74 @@ namespace Controle
                 throw new Exception(ex.ToString());
 
             }
+        }
+        public string enviarEmail(String dados,string texto)
+        {
+            string msg = null;
+            UsuarioModelo usuario = new UsuarioModelo();
+            if (dados == "")
+            {
+                msg = "Dados não preenchidos para enviar email";
+                return msg;
+            }
+            Conexao com = new Conexao();
+            MySqlConnection con = com.getConexao();
+           
+            string sql = "SELECT * from usuario where email=@usuario";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            //tratar algum erro de acesso
+            try
+            {
+                con.Open();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                cmd.Parameters.AddWithValue("@usuario", dados);
+                if (reader.HasRows)
+                {
+                    reader.Read();
+                    usuario.usuario = reader["usuario"].ToString();
+                    usuario.login = reader["login"].ToString();
+                    usuario.email = reader["email"].ToString();
+                }
+                else
+                {
+                    msg = "Usuario não localizado";
+                    return msg;
+                }
+                //serviço de email
+                SmtpClient cliente = new SmtpClient(); 
+                    //smtp.gmail.com
+                cliente.Host = "smtp.office365.com";//servidor do hotmail
+                cliente.Port = 587;
+                cliente.EnableSsl=true;
+                cliente.DeliveryMethod = SmtpDeliveryMethod.Network;
+                cliente.UseDefaultCredentials = false;
+                cliente.Credentials = new System.Net.NetworkCredential("jorge.ciffoni@sistemafiep.org.br", "senha");
+                MailMessage mail= new MailMessage();
+                mail.Sender = new MailAddress("jorge.ciffoni@sistemafiep.org.br", "sistema tecit");
+                mail.From = new MailAddress("jorge.ciffoni@sistemafiep.org.br","Admiistrador");
+                mail.To.Add(new MailAddress(usuario.email, usuario.login));
+                mail.Subject = "Recuperar email";
+                mail.Body = texto;
+                mail.IsBodyHtml= true;
+                mail.Priority = MailPriority.High;
+                try
+                {
+                    //tratar o acesso ao email
+                    cliente.Send(mail);
+                    msg = "Email enviado com sucesso";
+                }catch(Exception ex)
+                {
+                    msg="Erro ao enviar email:"+ ex.Message;
+
+                }
+            }
+            catch (MySqlException ms)
+            {
+                msg = "Erro no banco de dados" + ms.Message;
+            }
+
+
+            return msg;
         }
     }
 }

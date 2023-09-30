@@ -49,5 +49,12 @@ namespace projetotcc
                 MessageBox.Show("Usuário ou senha inválida!");
             }
         }
+
+        private void btnRecuperar_Click(object sender, EventArgs e)
+        {
+            Funcoes funcao= new Funcoes();
+            MessageBox.Show(funcao.enviarEmail(txtUsuario.Text, "recuperar email"));
+
+        }
     }
 }

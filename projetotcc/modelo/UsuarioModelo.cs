@@ -15,6 +15,7 @@ namespace modelo
         public string login;
         public string senha;
         public int perfil;
+        public string email;
         //crio o construtor do objeto
         public UsuarioModelo()
         {
