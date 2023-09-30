@@ -14,6 +14,7 @@ namespace projetotcc
 {
     public partial class FrmLogin : Form
     {
+        
         public FrmLogin()
         {
             InitializeComponent();
@@ -55,6 +56,17 @@ namespace projetotcc
             Funcoes funcao= new Funcoes();
             MessageBox.Show(funcao.enviarEmail(txtUsuario.Text, "recuperar email"));
 
+        }
+
+        private void btnCriarBd_Click(object sender, EventArgs e)
+        {
+            Funcoes func = new Funcoes();
+            func.Import_bd();
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

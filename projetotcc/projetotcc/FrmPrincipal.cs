@@ -60,5 +60,17 @@ namespace projetotcc
             pictureBox1.Visible = false;
             prod.Show();
         }
+
+        private void exportarBancoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Funcoes funcao = new Funcoes();
+            funcao.exportar_bd();
+        }
+
+        private void importarBancoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Funcoes func = new Funcoes();
+            func.Import_bd();
+        }
     }
 }

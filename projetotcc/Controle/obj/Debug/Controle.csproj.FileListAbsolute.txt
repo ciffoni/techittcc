@@ -45,3 +45,4 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\PdfSharp
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\PdfSharp.Charting.xml
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\de\PdfSharp.resources.dll
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\Controle\bin\Debug\MySqlBackup.dll

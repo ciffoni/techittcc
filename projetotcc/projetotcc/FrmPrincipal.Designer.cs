@@ -34,9 +34,11 @@
             this.logarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.produtoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarBancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarBancoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +58,9 @@
             // arquivoToolStripMenuItem
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logarToolStripMenuItem});
+            this.logarToolStripMenuItem,
+            this.exportarBancoToolStripMenuItem,
+            this.importarBancoToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
@@ -64,7 +68,7 @@
             // logarToolStripMenuItem
             // 
             this.logarToolStripMenuItem.Name = "logarToolStripMenuItem";
-            this.logarToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.logarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logarToolStripMenuItem.Text = "Logar";
             // 
             // cadastrarToolStripMenuItem
@@ -79,9 +83,16 @@
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
+            // 
+            // produtoToolStripMenuItem
+            // 
+            this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.produtoToolStripMenuItem.Text = "Produto";
+            this.produtoToolStripMenuItem.Click += new System.EventHandler(this.produtoToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -99,12 +110,19 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // produtoToolStripMenuItem
+            // exportarBancoToolStripMenuItem
             // 
-            this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.produtoToolStripMenuItem.Text = "Produto";
-            this.produtoToolStripMenuItem.Click += new System.EventHandler(this.produtoToolStripMenuItem_Click);
+            this.exportarBancoToolStripMenuItem.Name = "exportarBancoToolStripMenuItem";
+            this.exportarBancoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportarBancoToolStripMenuItem.Text = "Exportar banco";
+            this.exportarBancoToolStripMenuItem.Click += new System.EventHandler(this.exportarBancoToolStripMenuItem_Click);
+            // 
+            // importarBancoToolStripMenuItem
+            // 
+            this.importarBancoToolStripMenuItem.Name = "importarBancoToolStripMenuItem";
+            this.importarBancoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importarBancoToolStripMenuItem.Text = "Importar Banco";
+            this.importarBancoToolStripMenuItem.Click += new System.EventHandler(this.importarBancoToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -139,5 +157,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem produtoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportarBancoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importarBancoToolStripMenuItem;
     }
 }

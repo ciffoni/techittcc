@@ -133,5 +133,40 @@ namespace Controle
 
             return msg;
         }
+        //backup
+        public void exportar_bd()
+        {
+            //data
+            DateTime data;
+            //pega a data atual
+            data = DateTime.Today;
+            string nomeArquivo = "c:\\backup_.sql";
+            MySqlCommand cmd = new MySqlCommand();
+            MySqlConnection con = com.getConexao();
+            using (MySqlBackup md= new MySqlBackup(cmd))
+            {
+                cmd.Connection = con;
+                con.Open();
+                md.ExportInfo.AddCreateDatabase = true;
+                md.ExportInfo.ExportProcedures = true;
+                md.ExportInfo.ExportRows = true;
+                md.ExportToFile(nomeArquivo);
+                con.Close();
+            }
+        }
+        public void Import_bd()
+        {
+            string nomeArquivo = "c:\\backup_.sql";
+            string StrCon = "server=localhost;user=root;pwd=''";
+            MySqlCommand cmd = new MySqlCommand();
+            MySqlConnection con = new MySqlConnection(StrCon);
+            using (MySqlBackup md = new MySqlBackup(cmd))
+            {
+                cmd.Connection = con;
+                con.Open();
+                md.ImportFromFile(nomeArquivo);
+                con.Close();
+            }
+        }
     }
 }

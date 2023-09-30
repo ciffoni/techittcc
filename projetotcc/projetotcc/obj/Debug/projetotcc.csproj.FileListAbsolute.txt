@@ -52,3 +52,4 @@ C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\System
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\PdfSharp.dll
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\PdfSharp.xml
 C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\aluno\Documents\GitHub\techittcc\projetotcc\projetotcc\bin\Debug\MySqlBackup.dll
